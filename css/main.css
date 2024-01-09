@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+:root{
+    --bg: #161719;
+    --white: white;
+    --border: #2A2B2D;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: var(--white);
+    text-decoration: none;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 50%;
+    transform: all .6s;
+}
+
+body{
+    background-color: var(--bg);
+
+    font-family: 'Inter';
+
+    color: var(--white);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    padding: 40px;
+
+    margin: auto;
+
+    max-width: 1440px;
+}
+
+/* Настройка header */
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+
+    height: fit-content;
+}
+
+.logo {
+    background: linear-gradient(#1D9A6C, #BF85E7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.header__nav-box {
+    display: flex;
+    flex-direction: row;
+    gap: 117px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 37px;
+}
+
+.header__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.header-buttons__img {
+    border: none;
+    outline: none; 
+    background: none;
+}
+
+/* Настройка main */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.main__banner {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+
+    margin: auto;
+}
+
+.banner__img {
+    width: 1001px;
+    height: 391px;
+
+    padding: 80px 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 137px;
+
+    background-image: url(../img/images/Main__banner.png);
+    background-repeat: no-repeat no-repeat;
+}
+
+.img__block-par{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.img__title {
+    font-size: 62px;
+    font-weight: 500;
+}
+
+.img__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.banner-img__button {
+    display: flex;
+    flex-direction: column;
+
+    width: 180px;
+    height: 60px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 20px;
+    
+    background: linear-gradient(#5200D9, #C100B9);
+    color: var(--white);
+
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.mini__banner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main__information {
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+    
+    margin: auto;
+}
+
+.information__title {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.information__items {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.information__info-block {
+    width: 816px;
+    height: 580px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-block__box {
+    width: 388px;
+    height: 270px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 5px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--border);
+}
+
+.box__number {
+    text-align: center;
+    font-family: Inter;
+    font-size: 96px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.box__descript {
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.information__ad {
+    display: flex;
+    flex-direction: column;
+    gap: 171px;
+
+    width: 500px;
+    padding: 25px;
+
+    justify-content: center;
+
+    background-image: url(../img/images/order.png);
+    background-repeat: no-repeat;
+}
+
+.ad-block_par{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    width: 378px;
+}
+
+.ad__title {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ad__subtitle {
+    text-align: justify;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.main__sec-banner {
+    width: 1400px;
+    height: 587px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    justify-content: center;
+
+    background-image: url(./../img/images/senseit.png);
+    background-repeat: no-repeat;
+}
+
+.sec-banner__title {
+    margin-left: 25px;
+
+    font-family: Inter;
+    font-size: 62px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sec-banner__subtitle {
+    margin-left: 25px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main__product {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.product__first-product {
+    width: 680px;
+    height: 536px;
+    background-image: url(./../img/images/htc.png);
+}
+
+.product__second-product {
+    width: 680px;
+    height: 536px;
+    background-image: url(./../img/images/playstation.png);
+}
+
+.first-product__block {
+    margin-top: 305px;
+    margin-left: 68px;
+    
+    width: 363px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.box__title-main {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.box__title-sub {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.rewiews-text{
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.main__reviews {
+    width: 1400px;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.main__reviews::-webkit-scrollbar {
+    width: 0.5px;
+    height: 5px;
+}
+
+.main__reviews::-webkit-scrollbar-track{
+    margin-top: 12px;
+}
+
+.main__reviews::-webkit-scrollbar-thumb{
+    background-color: var(--border);
+    border-radius: 10px;
+}
+
+.scroll{
+    width: 2044px;
+
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+}
+
+.rewiews__block {
+    width: 388px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding: 43px 41px;
+
+    border-radius: 20px;
+    border: 5px solid #2A2B2D;
+    background: #161719;
+}
+
+.block__rate {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.block__text {
+    width: 302px;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.block__profile {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+
+/* Настройка footer */
+
+.footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__box {
+    width: 1122px;
+    height: 271px;
+
+    background-color: black;
+
+    padding: 78px 161px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.footer__items {
+    display: flex;
+    flex-direction: row;
+    gap: 163px;
+}
+
+.items__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links__footer {
+    font-size: 20px;
+    font-weight: 400;
+}
